@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_purple">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择地区："
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.aspros.selectcity.WheelView
+            android:id="@+id/province_Wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.aspros.selectcity.WheelView>
+
+        <com.aspros.selectcity.WheelView
+            android:id="@+id/city_Wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.aspros.selectcity.WheelView>
+
+        <com.aspros.selectcity.WheelView
+            android:id="@+id/area_Wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.aspros.selectcity.WheelView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/back_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E74C2F"
+            android:text="确定" />
+    </LinearLayout>
+</LinearLayout>
